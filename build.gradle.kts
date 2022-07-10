@@ -4,6 +4,7 @@ import org.springframework.boot.gradle.tasks.bundling.BootJar
 plugins {
   id("org.springframework.boot") version Versions.springBoot apply false
   id("io.spring.dependency-management") version Versions.springDependencyManagement apply false
+  id("org.jlleitschuh.gradle.ktlint") version Versions.ktlint
   kotlin("jvm") version Versions.kotlin
   kotlin("plugin.spring") version Versions.kotlin
 }

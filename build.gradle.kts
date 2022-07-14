@@ -40,6 +40,23 @@ subprojects {
         implementation(Dependencies.jacksonModule)
         implementation(Dependencies.kotlinReflect)
         implementation(Dependencies.kotlinStdlibJdk8)
+        implementation(Dependencies.kotlinCoroutinesCore)
+
+
+        //test
+        testImplementation(TestDependencies.kotlinCoroutinesTest)
+        testImplementation(TestDependencies.springBootTest) {
+            exclude(group = "junit")
+            exclude(group = "mockito-core")
+            exclude(group = "hamcrest")
+        }
+        testImplementation(TestDependencies.kotestJunit)
+        testImplementation(TestDependencies.kotestAssertions)
+        testImplementation(TestDependencies.kotestProperty)
+        testImplementation(TestDependencies.kotestSpring)
+        testImplementation(TestDependencies.mockk)
+
+
     }
 
     tasks.withType<KotlinCompile> {

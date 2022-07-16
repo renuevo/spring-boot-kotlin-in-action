@@ -72,10 +72,10 @@ subprojects {
     }
 
     tasks.named<Jar>("jar") {
-        enabled = true
+        enabled = false
     }
 
     tasks.named<BootJar>("bootJar") {
-        enabled = false
+        enabled = true
     }
 }

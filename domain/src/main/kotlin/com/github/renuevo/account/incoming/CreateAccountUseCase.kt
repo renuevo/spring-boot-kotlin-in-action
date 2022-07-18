@@ -14,6 +14,6 @@ data class CreateAccountCommand(
 
 fun CreateAccountCommand.toAccount() = Account(
     id = 0,
-    name = name,
+    accountNumber = name,
     Money(amount)
 )

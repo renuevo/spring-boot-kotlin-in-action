@@ -2,9 +2,13 @@ package com.github.renuevo.account
 
 data class Account(
     val id: Long,
-    val name: String,
+    val accountNumber: String,
     val money: Money
 ) {
+
+    init {
+        if (accountNumber.length > 6) throw RuntimeException("계좌번호는 6자리 이상!")
+    }
 
     fun withdraw(money: Money): Boolean {
         this.money.minus(money)

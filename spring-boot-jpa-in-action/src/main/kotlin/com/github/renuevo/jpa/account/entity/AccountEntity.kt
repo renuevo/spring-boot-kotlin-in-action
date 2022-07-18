@@ -4,15 +4,12 @@ import com.github.renuevo.account.Account
 import com.github.renuevo.account.Money
 import com.github.renuevo.jpa.common.BaseEntity
 import com.github.renuevo.jpa.user.entity.UserEntity
-import com.github.renuevo.user.User
 import javax.persistence.Entity
-import javax.persistence.FetchType
 import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
 import javax.persistence.Id
 import javax.persistence.JoinColumn
 import javax.persistence.ManyToOne
-import javax.persistence.OneToMany
 import javax.persistence.OneToOne
 import javax.persistence.Table
 
@@ -24,7 +21,7 @@ data class AccountEntity(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long,
 
-    val name: String,
+    val accountNumber: String,
 
     val userId: Long
 
@@ -41,6 +38,6 @@ data class AccountEntity(
 
 fun AccountEntity.toAccount() = Account(
     id = id,
-    name = name,
+    accountNumber = accountNumber,
     money = Money(amount = accountMoneyEntity!!.amount)
 )

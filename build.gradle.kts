@@ -42,7 +42,6 @@ subprojects {
         implementation(Dependencies.kotlinStdlibJdk8)
         implementation(Dependencies.kotlinCoroutinesCore)
 
-
         //test
         testImplementation(TestDependencies.kotlinCoroutinesTest)
         testImplementation(TestDependencies.springBootTest) {
@@ -55,8 +54,6 @@ subprojects {
         testImplementation(TestDependencies.kotestProperty)
         testImplementation(TestDependencies.kotestSpring)
         testImplementation(TestDependencies.mockk)
-
-
     }
 
     tasks.withType<KotlinCompile> {

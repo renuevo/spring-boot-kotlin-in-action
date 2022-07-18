@@ -10,7 +10,8 @@ data class User(
 ) {
 
     init {
-        if (LocalDate.now().isAfter(birthday)) throw RuntimeException("어디서 왔니?")
+        if (LocalDate.now().isAfter(birthday) || age < 1) throw RuntimeException("어디서 왔니?")
+        if (name.isEmpty()) throw RuntimeException("이름이 올바르지 않다")
     }
 
 }

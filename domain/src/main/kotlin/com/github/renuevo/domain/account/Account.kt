@@ -7,7 +7,7 @@ data class Account(
 ) {
 
     init {
-        if (accountNumber.length > 6) throw RuntimeException("계좌번호는 6자리 이상!")
+        if (accountNumber.length < 6) throw RuntimeException("계좌번호는 6자리 이상!")
     }
 
     fun withdraw(money: Money): Boolean {

@@ -1,7 +1,7 @@
 package com.github.renuevo.jpa.account.adapter
 
-import com.github.renuevo.account.Account
-import com.github.renuevo.account.outgoing.LoadAccountPort
+import com.github.renuevo.domain.account.Account
+import com.github.renuevo.domain.account.outgoing.LoadAccountPort
 import com.github.renuevo.jpa.account.entity.toAccount
 import com.github.renuevo.jpa.account.repository.AccountRepository
 import org.springframework.data.repository.findByIdOrNull

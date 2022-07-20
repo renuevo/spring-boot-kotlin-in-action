@@ -2,7 +2,7 @@ package com.github.renuevo.jpa.user.entity
 
 import com.github.renuevo.jpa.account.entity.AccountEntity
 import com.github.renuevo.jpa.common.BaseEntity
-import com.github.renuevo.user.User
+import com.github.renuevo.domain.user.User
 import java.time.LocalDate
 import java.util.TreeSet
 import javax.persistence.Entity

@@ -1,6 +1,6 @@
-package com.github.renuevo.account.outgoing
+package com.github.renuevo.domain.account.outgoing
 
-import com.github.renuevo.account.Account
+import com.github.renuevo.domain.account.Account
 
 interface LoadAccountPort {
 

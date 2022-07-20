@@ -1,4 +1,4 @@
-package com.github.renuevo.user
+package com.github.renuevo.domain.user
 
 import java.time.LocalDate
 

@@ -1,7 +1,7 @@
-package com.github.renuevo.account.incoming
+package com.github.renuevo.domain.account.incoming
 
-import com.github.renuevo.account.Account
-import com.github.renuevo.account.Money
+import com.github.renuevo.domain.account.Account
+import com.github.renuevo.domain.account.Money
 
 interface CreateAccountUseCase {
     fun createAccount(createAccountCommand: CreateAccountCommand): Account

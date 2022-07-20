@@ -1,6 +1,6 @@
-package com.github.renuevo.user.outgoing
+package com.github.renuevo.domain.user.outgoing
 
-import com.github.renuevo.user.User
+import com.github.renuevo.domain.user.User
 
 interface LoadUserPort {
 

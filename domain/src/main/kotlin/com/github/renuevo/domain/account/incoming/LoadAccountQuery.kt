@@ -1,6 +1,6 @@
-package com.github.renuevo.account.incoming
+package com.github.renuevo.domain.account.incoming
 
-import com.github.renuevo.account.Account
+import com.github.renuevo.domain.account.Account
 
 interface LoadAccountQuery {
     fun findById(id: Long): Account?

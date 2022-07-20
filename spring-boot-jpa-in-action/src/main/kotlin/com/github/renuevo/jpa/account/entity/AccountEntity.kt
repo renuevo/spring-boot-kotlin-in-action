@@ -1,7 +1,7 @@
 package com.github.renuevo.jpa.account.entity
 
-import com.github.renuevo.account.Account
-import com.github.renuevo.account.Money
+import com.github.renuevo.domain.account.Account
+import com.github.renuevo.domain.account.Money
 import com.github.renuevo.jpa.common.BaseEntity
 import com.github.renuevo.jpa.user.entity.UserEntity
 import javax.persistence.Entity

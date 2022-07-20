@@ -2,8 +2,8 @@ package com.github.renuevo.jpa.user.adapter
 
 import com.github.renuevo.jpa.user.entity.toUser
 import com.github.renuevo.jpa.user.repository.UserRepository
-import com.github.renuevo.user.User
-import com.github.renuevo.user.outgoing.LoadUserPort
+import com.github.renuevo.domain.user.User
+import com.github.renuevo.domain.user.outgoing.LoadUserPort
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Component
 

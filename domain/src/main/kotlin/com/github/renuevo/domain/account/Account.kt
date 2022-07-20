@@ -1,4 +1,4 @@
-package com.github.renuevo.account
+package com.github.renuevo.domain.account
 
 data class Account(
     val id: Long,

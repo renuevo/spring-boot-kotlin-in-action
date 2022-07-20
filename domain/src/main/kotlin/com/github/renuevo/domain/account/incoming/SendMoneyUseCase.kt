@@ -1,4 +1,4 @@
-package com.github.renuevo.account.incoming
+package com.github.renuevo.domain.account.incoming
 
 interface SendMoneyUseCase {
     fun sendAccountMoney(sendAccountMoneyCommand: SendAccountMoneyCommand): Boolean

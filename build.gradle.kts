@@ -5,6 +5,7 @@ plugins {
     id("org.springframework.boot") version Versions.springBoot apply false
     id("io.spring.dependency-management") version Versions.springDependencyManagement apply false
     id("org.jlleitschuh.gradle.ktlint") version Versions.ktlint
+    id("java-test-fixtures")
     kotlin("jvm") version Versions.kotlin
     kotlin("plugin.spring") version Versions.kotlin
 }
@@ -31,6 +32,7 @@ subprojects {
     apply(plugin = "kotlin-allopen")
     apply(plugin = "org.springframework.boot")
     apply(plugin = "io.spring.dependency-management")
+    apply(plugin = "java-test-fixtures")
 
     java.sourceCompatibility = JavaVersion.VERSION_11
     java.targetCompatibility = JavaVersion.VERSION_11

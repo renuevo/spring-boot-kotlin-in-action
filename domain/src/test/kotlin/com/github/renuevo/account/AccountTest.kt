@@ -1,6 +1,6 @@
 package com.github.renuevo.account
 
-import com.github.renuevo.domain.AccountFixtures
+import com.github.renuevo.domain.account.AccountFixtures
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.ShouldSpec
 import io.kotest.matchers.shouldBe

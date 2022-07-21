@@ -1,7 +1,4 @@
-package com.github.renuevo.domain
-
-import com.github.renuevo.domain.account.Account
-import com.github.renuevo.domain.account.Money
+package com.github.renuevo.domain.account
 
 object AccountFixtures {
 

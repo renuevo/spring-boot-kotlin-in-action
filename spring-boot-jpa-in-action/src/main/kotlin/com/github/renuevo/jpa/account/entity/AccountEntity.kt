@@ -5,6 +5,7 @@ import com.github.renuevo.domain.account.Money
 import com.github.renuevo.jpa.common.BaseEntity
 import com.github.renuevo.jpa.user.entity.UserEntity
 import javax.persistence.Entity
+import javax.persistence.FetchType
 import javax.persistence.GeneratedValue
 import javax.persistence.GenerationType
 import javax.persistence.Id
@@ -30,7 +31,7 @@ data class AccountEntity(
     @OneToOne(mappedBy = "account")
     var accountMoneyEntity: AccountMoneyEntity? = null
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_entity_id", insertable = false, updatable = false)
     var user: UserEntity? = null
 }
@@ -40,4 +41,10 @@ fun AccountEntity.toAccount() = Account(
     id = id,
     accountNumber = accountNumber,
     money = Money(amount = accountMoneyEntity!!.amount)
+)
+
+fun Account.toEntity(userId: Long) = AccountEntity(
+    id = id,
+    accountNumber = accountNumber,
+    userId = userId
 )

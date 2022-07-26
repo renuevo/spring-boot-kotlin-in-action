@@ -22,7 +22,9 @@ data class AccountMoneyEntity(
     val amount: Long
 
 ) : BaseEntity() {
+
     @OneToOne
     @JoinColumn(name = "account_entity_id")
     var account: AccountEntity? = null
+
 }

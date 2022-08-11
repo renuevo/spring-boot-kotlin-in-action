@@ -17,7 +17,7 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "account")
-data class AccountEntity(
+class AccountEntity(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long,

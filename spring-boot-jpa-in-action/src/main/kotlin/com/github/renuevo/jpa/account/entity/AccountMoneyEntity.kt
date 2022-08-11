@@ -11,7 +11,7 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "account_money")
-data class AccountMoneyEntity(
+class AccountMoneyEntity(
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

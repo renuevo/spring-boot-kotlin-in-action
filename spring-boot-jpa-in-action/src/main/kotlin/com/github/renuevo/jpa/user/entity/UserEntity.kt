@@ -16,7 +16,7 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "users")
-data class UserEntity(
+class UserEntity(
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

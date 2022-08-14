@@ -32,7 +32,6 @@ subprojects {
     apply(plugin = "kotlin-allopen")
     apply(plugin = "org.springframework.boot")
     apply(plugin = "io.spring.dependency-management")
-    apply(plugin = "java-test-fixtures")
 
     java.sourceCompatibility = JavaVersion.VERSION_11
     java.targetCompatibility = JavaVersion.VERSION_11

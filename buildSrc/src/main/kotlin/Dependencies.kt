@@ -9,6 +9,7 @@ object Dependencies {
     val kotlinReflect by lazy { "org.jetbrains.kotlin:kotlin-reflect" }
     val kotlinStdlibJdk8 by lazy { "org.jetbrains.kotlin:kotlin-stdlib-jdk8" }
     val kotlinCoroutinesCore by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:${Versions.coroutines}" }
+    val kotlinLogger by lazy {"io.github.microutils:kotlin-logging-jvm:${Versions.logger}"}
 
 
     val resilience4jSpringBoot by lazy { "io.github.resilience4j:resilience4j-micrometer:${Versions.resilience4jVersion}" }

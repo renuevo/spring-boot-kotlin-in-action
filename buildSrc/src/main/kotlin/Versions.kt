@@ -4,6 +4,7 @@ object Versions {
     const val kotlin = "1.7.0"
     const val coroutines = "1.6.1"
     const val ktlint = "10.3.0"
+    const val logger = "2.1.20"
 
 
     //spring

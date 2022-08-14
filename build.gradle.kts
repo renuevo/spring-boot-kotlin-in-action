@@ -43,6 +43,7 @@ subprojects {
         implementation(Dependencies.kotlinReflect)
         implementation(Dependencies.kotlinStdlibJdk8)
         implementation(Dependencies.kotlinCoroutinesCore)
+        implementation(Dependencies.kotlinLogger)
 
         //test
         testImplementation(TestDependencies.kotlinCoroutinesTest)

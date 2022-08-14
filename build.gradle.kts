@@ -67,7 +67,7 @@ subprojects {
 
     tasks.withType<Test> {
         useJUnitPlatform()
-        systemProperty("spring.profiles.active", "test")
+        systemProperty("spring.profiles.active", "test") //kotest not working
     }
 
     tasks.named<Jar>("jar") {

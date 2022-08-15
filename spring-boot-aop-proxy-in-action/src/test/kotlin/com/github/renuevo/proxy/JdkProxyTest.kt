@@ -8,12 +8,13 @@ import java.lang.reflect.InvocationHandler
 import java.lang.reflect.Method
 import java.lang.reflect.Proxy
 
-
 internal class JdkProxyTest : ShouldSpec({
 
     context("JDK Proxy Test") {
 
+
         should("Invocation Handler") {
+
             val jdkProxyTarget: JdkProxyService = JdkProxyServiceImpl()
 
             val proxy = Proxy.newProxyInstance(

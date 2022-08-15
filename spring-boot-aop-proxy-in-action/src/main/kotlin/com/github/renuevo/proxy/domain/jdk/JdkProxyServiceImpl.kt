@@ -9,9 +9,7 @@ class JdkProxyServiceImpl : JdkProxyService {
     private val log = KotlinLogging.logger { }
 
     override fun methodA() = log.info { "I'm A" }
-
     override fun methodB() = log.info { "I'm B" }
-
     override fun methodC() = log.info { "I'm C" }
 
 }

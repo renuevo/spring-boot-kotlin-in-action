@@ -33,10 +33,9 @@ internal class JdkProxyTest : ShouldSpec({
 })
 
 
-internal class TestInvocationHandler constructor(jdkProxyService: JdkProxyService) : InvocationHandler {
+internal class TestInvocationHandler(private val target: JdkProxyService) : InvocationHandler {
 
     private val log = KotlinLogging.logger { }
-    private val target = jdkProxyService
 
     override fun invoke(proxy: Any, method: Method, args: Array<out Any>?): Any? {
 

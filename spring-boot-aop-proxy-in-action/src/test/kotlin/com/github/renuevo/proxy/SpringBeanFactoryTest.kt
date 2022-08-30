@@ -1,20 +1,24 @@
 package com.github.renuevo.proxy
 
-import com.github.renuevo.proxy.domain.factory.FactoryCglibService
-import com.github.renuevo.proxy.domain.factory.FactoryJdkProxyService
+import com.github.renuevo.proxy.domain.factory.FactoryBeanConfig
+import com.github.renuevo.proxy.domain.jdk.JdkProxyService
+import io.kotest.core.extensions.Extension
 import io.kotest.core.spec.style.ShouldSpec
-import org.springframework.boot.test.context.SpringBootTest
+import io.kotest.extensions.spring.SpringExtension
+import org.springframework.test.context.ContextConfiguration
 
 
-@SpringBootTest
+@ContextConfiguration(classes = [FactoryBeanConfig::class])
 internal class SpringBeanFactoryTest(
-    private val factoryJdkProxyService: FactoryJdkProxyService,
-    private val factoryCglibService: FactoryCglibService
-) : ShouldSpec({
+    private val jdkProxyService: JdkProxyService
+) : ShouldSpec() {
+    override fun extensions(): List<Extension> = listOf(SpringExtension)
 
-    should("Factory Proxy Test"){
-        println(factoryJdkProxyService.javaClass)
-        println(factoryCglibService.javaClass)
+    init {
+        should("Factory Proxy Test") {
+            jdkProxyService.methodA()
+            jdkProxyService.methodB()
+            jdkProxyService.methodC()
+        }
     }
-
-})
+}

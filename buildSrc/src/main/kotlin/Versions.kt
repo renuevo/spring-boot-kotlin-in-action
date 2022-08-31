@@ -20,6 +20,7 @@ object Versions {
 
     //jpa
     const val querydslVersion = "4.4.0"
+    const val springEnversVersion = "2.7.2"
 
 
     //test

@@ -21,6 +21,7 @@ object Dependencies {
     val postgres by lazy { "org.postgresql:postgresql" }
     val queryDslJpa by lazy { "com.querydsl:querydsl-jpa:${Versions.querydslVersion}" }
     val queryDslApt by lazy { "com.querydsl:querydsl-apt:${Versions.querydslVersion}:jpa" }
+    val springEnvers by lazy { "org.springframework.data:spring-data-envers:${Versions.springEnversVersion}"}
 
 }
 

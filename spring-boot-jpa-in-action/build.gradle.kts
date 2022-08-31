@@ -18,6 +18,8 @@ dependencies {
     runtimeOnly(Dependencies.h2)
     implementation(Dependencies.postgres)
 
+    implementation(Dependencies.springEnvers)
+
     implementation(Dependencies.queryDslJpa)
     kapt(Dependencies.queryDslApt)
     testImplementation(Dependencies.queryDslJpa)

@@ -24,4 +24,5 @@ dependencies {
     kapt(Dependencies.queryDslApt)
     testImplementation(Dependencies.queryDslJpa)
     testAnnotationProcessor(Dependencies.queryDslApt)
+    testImplementation(testFixtures(project(Projects.domain)))
 }

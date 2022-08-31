@@ -27,19 +27,37 @@ class UserEntity(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long,
 
-    val name: String,
+    name: String,
 
-    val birthday: LocalDate,
+    birthday: LocalDate,
 
-    val age: Int
+    age: Int,
 
-) : BaseEntity() {
+    ) : BaseEntity() {
+
+    var name: String = name
+        protected set
+
+    var birthday: LocalDate = birthday
+        protected set
+
+    var age: Int = age
+        protected set
 
     @NotAudited
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     var accountList: MutableSet<AccountEntity> = TreeSet()
+
+    fun updateName(changeName: String) = this.apply { name = changeName }
 }
 
+
+fun User.toEntity() = UserEntity(
+    id = id,
+    name = name,
+    birthday = birthday,
+    age = age
+)
 
 fun UserEntity.toUser() = User(
     id = id,

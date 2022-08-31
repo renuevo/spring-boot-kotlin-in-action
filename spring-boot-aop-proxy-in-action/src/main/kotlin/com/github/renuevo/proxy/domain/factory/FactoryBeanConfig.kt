@@ -14,12 +14,10 @@ import java.lang.reflect.Proxy
 class FactoryBeanConfig {
 
     @Bean
-    fun jdkProxyService(): TestFactoryBean {
-        return TestFactoryBean(
-            interfaceType = JdkProxyService::class.java,
-            target = JdkProxyServiceImpl()
-        )
-    }
+    fun jdkProxyService(): TestFactoryBean = TestFactoryBean(
+        interfaceType = JdkProxyService::class.java,
+        target = JdkProxyServiceImpl()
+    )
 
 }
 

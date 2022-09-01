@@ -28,12 +28,10 @@ class UserEntity(
     val id: Long,
 
     name: String,
-
     birthday: LocalDate,
+    age: Int
 
-    age: Int,
-
-    ) : BaseEntity() {
+) : BaseEntity() {
 
     var name: String = name
         protected set

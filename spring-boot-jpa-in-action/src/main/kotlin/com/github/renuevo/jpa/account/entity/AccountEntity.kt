@@ -22,11 +22,16 @@ class AccountEntity(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long,
 
-    val accountNumber: String,
-
-    val userId: Long
+    accountNumber: String,
+    userId: Long
 
 ) : BaseEntity() {
+
+    var accountNumber: String = accountNumber
+        protected set
+
+    var userId: Long = userId
+        protected set
 
     @OneToOne(mappedBy = "account")
     var accountMoneyEntity: AccountMoneyEntity? = null

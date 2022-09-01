@@ -17,11 +17,16 @@ class AccountMoneyEntity(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long,
 
-    val accountId: Long,
-
-    val amount: Long
+    accountId: Long,
+    amount: Long
 
 ) : BaseEntity() {
+
+    var accountId: Long = accountId
+        protected set
+
+    var amount: Long = amount
+        protected set
 
     @OneToOne
     @JoinColumn(name = "account_entity_id")

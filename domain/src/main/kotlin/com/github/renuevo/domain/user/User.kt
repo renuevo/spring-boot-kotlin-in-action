@@ -14,4 +14,6 @@ data class User(
         if (name.isEmpty()) throw RuntimeException("이름이 올바르지 않다")
     }
 
+    fun changeName(name: String) = this.copy(name = name)
+
 }

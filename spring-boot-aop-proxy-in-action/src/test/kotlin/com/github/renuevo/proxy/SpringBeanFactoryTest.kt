@@ -1,6 +1,6 @@
 package com.github.renuevo.proxy
 
-import com.github.renuevo.proxy.domain.factory.FactoryBeanConfig
+import com.github.renuevo.proxy.domain.factory.config.FactoryBeanConfig
 import com.github.renuevo.proxy.domain.jdk.JdkProxyService
 import io.kotest.core.extensions.Extension
 import io.kotest.core.spec.style.ShouldSpec

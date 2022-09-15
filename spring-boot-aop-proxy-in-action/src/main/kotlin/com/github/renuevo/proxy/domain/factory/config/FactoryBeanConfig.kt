@@ -1,4 +1,4 @@
-package com.github.renuevo.proxy.domain.factory
+package com.github.renuevo.proxy.domain.factory.config
 
 import com.github.renuevo.proxy.domain.jdk.JdkProxyService
 import com.github.renuevo.proxy.domain.jdk.JdkProxyServiceImpl

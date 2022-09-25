@@ -9,6 +9,7 @@ object Versions {
 
     //spring
     const val springBoot = "2.6.9"
+    const val springBootCache = "2.6.9"
     const val springDependencyManagement = "1.0.11.RELEASE"
     const val springdoc = "1.6.9"
     const val springCloudVersion = "2021.0.1"

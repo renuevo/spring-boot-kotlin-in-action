@@ -13,5 +13,5 @@ class SseController(private val sseService: SseService) {
 
 
     @GetMapping("/subscribe")
-    fun subscribe(@RequestHeader("last-event-id", required = false, defaultValue = "") lastEventId: String): SseEmitter = sseService.subscribe(lastEventId)
+    fun subscribe(@RequestHeader("Last-Event-ID", required = false, defaultValue = "") lastEventId: String): SseEmitter = sseService.subscribe(lastEventId)
 }

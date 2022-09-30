@@ -7,6 +7,6 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter
 class SseService {
 
     fun subscribe(lastEventId: String): SseEmitter {
-        return SseEmitter(1000 * 3600)
+        return SseEmitter(1000 * 3600).also { it.send("sse test") }
     }
 }

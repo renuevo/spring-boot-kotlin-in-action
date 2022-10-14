@@ -4,6 +4,7 @@ object Dependencies {
     val springBootJpa by lazy { "org.springframework.boot:spring-boot-starter-data-jpa" }
     val springBootAop by lazy { "org.springframework.boot:spring-boot-starter-aop" }
     val springBootCache by lazy { "org.springframework.boot:spring-boot-starter-cache" }
+    val springBootRedis by lazy { "org.springframework.boot:spring-boot-starter-data-redis" }
     val springCloud by lazy { "org.springframework.cloud:spring-cloud-dependencies:${Versions.springCloudVersion}" }
 
 

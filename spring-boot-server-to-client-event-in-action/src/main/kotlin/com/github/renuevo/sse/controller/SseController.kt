@@ -11,7 +11,6 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter
 @RequestMapping("/see")
 class SseController(private val sseService: SseService) {
 
-
     @GetMapping("/subscribe")
     fun subscribe(@RequestHeader("Last-Event-ID", required = false, defaultValue = "") lastEventId: String): SseEmitter = sseService.subscribe(lastEventId)
 }
